@@ -1,0 +1,38 @@
+.section-home{
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100vmin;
+    background-color: rgba(7,31,39,1);
+}
+.section-home__container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
+}
+.section-home__h4{
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: var(--color-secondary);
+    padding-left: 2.5px;
+}
+.section-home__h1{
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+.section-home__h2{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.section-home__p{
+    max-width: 550px;
+    font-size: 1rem;
+    color: var(--color-secondary);
+}
+.ctas-container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
