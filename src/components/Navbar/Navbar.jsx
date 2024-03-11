@@ -34,17 +34,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav id="navegation" className="nav">
-        <ul className="nav-list">
-          {routes.map((route) => (
-            <li key={route.ID} className="nav-item">
-              <a href={route.path} className="nav-path">{route.name}</a>
-            </li>
-          ))}
-        </ul>
-
-        <button type="button" className="curriculum-btn">CV</button>
-      </nav>
+      
     </>
   )
 }
