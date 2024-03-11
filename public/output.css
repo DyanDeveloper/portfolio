@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+
+*, *::before, *::after{
+  font-family: 'Onest', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+::-moz-selection {
+  background-color: transparent;
+  color: var(--primary-500);
+}
+
+::selection {
+  background-color: transparent;
+  color: var(--primary-500);
+}
+
+:root{
+  /* Vars */
+  --transition-ft: all 0.25s ease-in-out;
+  --max-width: 1024px;
+  --primary-50: #edfefe;
+  --primary-100: #d2f9fb;
+  --primary-200: #aaf2f7;
+  --primary-300: #70e5f0;
+  --primary-400: #2ed0e2;
+  --primary-500: #12b3c8;
+  --primary-600: #1290a8;
+  --primary-700: #167488;
+  --primary-800: #1b5e6f;
+  --primary-900: #1b4e5e;
+  --primary-950: #071f27;
+  color-scheme: light dark;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body{
+  min-height: 200vh;
+  background: rgb(7, 31, 39);
+}
+
+section{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button{
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: var(--color-secondary);
+  transition: var(--transition-ft);
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover{
+  color:  var(--color-primary);
+}
+
+a, abbr{
+  text-decoration: none;
+  color: var(--primary-200);
+  letter-spacing: 0.5px;
+  font-size: 0.875rem;
+  font-weight: 300;
+  text-shadow: 1px 1px 1px #071f27;
+}
+
+a:hover{
+  opacity: 0.5;
+}
+
+nav, ul{
+  width: 100%;
+  max-width: var(--max-width);
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+}
+
+li{
+  list-style: none;
+}

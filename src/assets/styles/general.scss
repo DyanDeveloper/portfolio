@@ -1,5 +1,7 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 @import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
-
 *, *::before, *::after{
     font-family: 'Onest', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     box-sizing: border-box;
@@ -12,9 +14,8 @@
 }
 :root{
     /* Vars */
-    --transition-ft: all 0.25s ease-in-out;
+    --transition-1: all 0.25s ease-in-out;
     --max-width: 1024px;
-
     --primary-50: #edfefe;
     --primary-100: #d2f9fb;
     --primary-200: #aaf2f7;
@@ -26,30 +27,23 @@
     --primary-800: #1b5e6f;
     --primary-900: #1b4e5e;
     --primary-950: #071f27;    
-    
     color-scheme: light dark;
-    line-height: 1.5;
     font-weight: 400;
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
 body{
-    min-height: 100vh;
-    background: rgb(7,31,39);
-    background: linear-gradient(0deg, rgba(7,31,39,1) 0%, rgba(22,116,136,1) 100%);
+    min-height: 200vh;
+    background: rgb(7, 31, 39);
 }
-
 section{
     width: 100%;
-
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 button{
     background-color: transparent;
     outline: none;
@@ -63,30 +57,24 @@ button{
 button:hover{
     color:  var(--color-primary);
 }
-
 a, abbr{
     text-decoration: none;
-    color: var(--color-secondary);
-    font-size: 0.875rem;
-    transition: var(--transition-ft);
+    color: var(--primary-200);
+    letter-spacing: 0.5px;
+    font-size: 1rem;
+    font-weight: 300;
+    text-shadow: 1px 1px 1px #071f27;
 }
-a:hover{
-    color: var(--color-primary);
-}
-
 nav, ul{
     width: 100%;
     max-width: var(--max-width);
     margin: auto;
-
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1rem;
-
     list-style: none;
 }
-
 li{
     list-style: none;
 }

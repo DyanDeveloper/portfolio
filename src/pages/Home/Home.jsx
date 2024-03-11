@@ -4,7 +4,11 @@ import "./Home.scss";
 const Home = () => {
   return (
     <>
-      <p>Lorem1000</p>
+      <section id="welcomeSection" className="section-home">
+        <div className="w-full max-w-5xl flex flex-col items-center justify-center text-center">
+
+        </div>
+      </section>
     </>
   )
 }

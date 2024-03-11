@@ -2,12 +2,11 @@ import React from "react";
 import "./Navbar.scss";
 
 const Navbar = () => {
-
   const routes = [
     {
       ID: "1",
       path: "/",
-      name: "Inicio"
+      name: "Presentación"
     },
     {
       ID: "2",
@@ -21,22 +20,36 @@ const Navbar = () => {
     },
     {
       ID: "4",
-      path: "/feedback",
-      name: "Feedbacks"
+      path: "/clientes",
+      name: "Clientes"
     },
     {
       ID: "5",
+      path: "/habilidades",
+      name: "Habilidades"
+    },
+    {
+      ID: "6",
       path: "/contacto",
-      name: "Contacto"
+      name: "Contáctame"
     }
   ];
 
-
   return (
     <>
-      
+      <nav id="navegation" className="nav">
+        <ul className="nav-list">
+          {routes.map((route, index) => (
+            <li key={route.ID} className={`nav-item ${index === routes.length - 1 ? 'contact-cta' : ''}`}>
+              <a href={route.path} className="nav-path hover:opacity-50">
+                {route.name}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
     </>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

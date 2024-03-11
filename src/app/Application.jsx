@@ -7,7 +7,8 @@ import "@/assets/styles/general.scss";
 function Application() {
   return (
     <>
-      
+      <Header />
+      <Home />
     </>
   )
 }
