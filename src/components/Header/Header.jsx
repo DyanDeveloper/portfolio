@@ -28,7 +28,9 @@ const Header = () => {
   return (
     <>
       <header id="header" className={`header ${headerActive ? "active" : ""}`}>
-        <Navbar /> 
+        <div className="w-full max-w-5xl flex items-center justify-center text-center">
+          <Navbar />
+        </div>
       </header>
     </>
   )

@@ -6,7 +6,7 @@ const Navbar = () => {
     {
       ID: "1",
       path: "/",
-      name: "Presentación"
+      name: "Perfil"
     },
     {
       ID: "2",
@@ -20,13 +20,13 @@ const Navbar = () => {
     },
     {
       ID: "4",
-      path: "/clientes",
-      name: "Clientes"
+      path: "/habilidades",
+      name: "Habilidades"
     },
     {
       ID: "5",
-      path: "/habilidades",
-      name: "Habilidades"
+      path: "/clientes",
+      name: "Clientes"
     },
     {
       ID: "6",
