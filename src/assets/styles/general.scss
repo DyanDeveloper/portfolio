@@ -7,16 +7,13 @@
     margin: 0;
     user-select: #1A7999;
 }
-::selection{
-    color: #219BC4;
-    background-color: transparent;
-}
+
 :root{
     --color-primary: #E6EDF3;
     --color-secondary: #BACDDE;
     --color-body: rgba(1, 4, 9, 1.0);
     --transition-ft: all 0.25s ease-in-out;
-    --max-width: 1115px;
+    --max-width: 900px;
     
     color-scheme: light dark;
     color: var(--color-primary);
@@ -30,7 +27,6 @@
 }
 
 body{
-    height: 100vh;
     background: linear-gradient(0deg, rgba(7,31,39,1) 0%, rgba(11,52,65,1) 100%);
 }
 
@@ -48,10 +44,8 @@ button{
     border: none;
     
     color: var(--color-secondary);
-    -webkit-box-reflect: below 6px linear-gradient(transparent, #00000050);
     transition: var(--transition-ft);
     cursor: pointer;
-    padding: 0.5rem 1rem;
     border-radius: 4px;
 }
 button:hover{

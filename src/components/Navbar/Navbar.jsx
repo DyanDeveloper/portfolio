@@ -42,6 +42,8 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
+
+        <button type="button" className="curriculum-btn">CV</button>
       </nav>
     </>
   )

@@ -1,10 +1,22 @@
+.nav{
+    display: flex;
+    align-items: center;
+    line-height: 64px;
+}
 .nav-list{
     gap: 1rem;
 }
 .nav-path{
     border-radius: 4px;
-    padding: 0.25rem 0.5rem;
+    padding: 0.35rem 0.5rem;
 }
-.nav-path:hover{
-    background-color: #0B3441;
+
+.curriculum-btn{
+    border-radius: 12px;
+    padding: 0.35rem 1rem;
+    background-color: #0F4657;
+    transition: var(--transition-ft);
+}
+.curriculum-btn:hover{
+    background-color: #12586D;
 }

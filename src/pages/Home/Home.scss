@@ -1,7 +1,7 @@
 .section-home{
-    height: 90vmin;
-    
+    height: 100vmin;
 }
+
 .section-home__container{
     width: 100%;
     max-width: var(--max-width);
@@ -10,9 +10,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     text-align: center;
-
+    gap: 1rem;
 }
 .section-home__h4{
     font-size: 0.875rem;
@@ -23,25 +22,27 @@
 .section-home__h1{
     font-size: 3.5rem;
     font-weight: 600;
+    line-height: 4rem;
 }
 .section-home__h2{
     font-size: 2rem;
     font-weight: 500;
 }
 .section-home__p{
-    max-width: 450px;
     font-size: 1rem;
     color: var(--color-secondary);
 }
-.ctas-container{
+
+.home-content{
+    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
+    position: relative;
     gap: 1rem;
 }
-.home-cta{
-    outline: 2px solid transparent;
-    background-color: #0f4557;
+.home-content.column-content{
+    flex-direction: column;
+    gap: 0.25rem;
 }
-.home-cta:hover{
-    outline-color: #0f4557;
-}
+
