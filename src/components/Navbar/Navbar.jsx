@@ -20,16 +20,11 @@ const Navbar = () => {
     },
     {
       ID: "4",
-      path: "/habilidades",
-      name: "Habilidades"
-    },
-    {
-      ID: "5",
       path: "/clientes",
       name: "Clientes"
     },
     {
-      ID: "6",
+      ID: "5",
       path: "/contacto",
       name: "Contáctame"
     }
@@ -37,13 +32,11 @@ const Navbar = () => {
 
   return (
     <>
-      <nav id="navegation" className="nav">
-        <ul className="nav-list">
+      <nav id="navegation" className="navegation">
+        <ul className="navegation-ul">
           {routes.map((route, index) => (
-            <li key={route.ID} className={`nav-item ${index === routes.length - 1 ? 'contact-cta' : ''}`}>
-              <a href={route.path} className="nav-path hover:opacity-50">
-                {route.name}
-              </a>
+            <li key={route.ID} className={`navegation-li ${index === routes.length - 1 ? 'contact-cta' : ''}`}>
+              <a href={route.path} className="navegation-path hover:opacity-50">{route.name}</a>
             </li>
           ))}
         </ul>

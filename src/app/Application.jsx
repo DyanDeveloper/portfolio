@@ -9,6 +9,7 @@ function Application() {
     <>
       <Header />
       <Home />
+      <Experience />
     </>
   )
 }

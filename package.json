@@ -11,6 +11,7 @@
     "build:css": "tailwindcss build src/assets/styles/general.scss -o public/output.css"
   },
   "dependencies": {
+    "@remixicon/react": "^4.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.3",
