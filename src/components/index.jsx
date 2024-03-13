@@ -7,5 +7,5 @@ export { default as Footer } from "./Footer/Footer";
 export { TitleH1, SubtitleH2, SubtitleH3, SubtitleH4, ParagraphP } from "./Titles/Title";
 // Icons
 export { IconLinkedin, IconGithub, IconInstagram, IconTwitter } from "./Icons/Icons";
-// Documents
+// Actions
 export { ButtonCurriculum, SectionNext } from "./Buttons/Buttons";

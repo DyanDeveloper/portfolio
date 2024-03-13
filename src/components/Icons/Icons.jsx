@@ -1,50 +1,15 @@
 import React from "react";
 import { RiLinkedinBoxFill, RiGithubFill, RiInstagramLine, RiTwitterFill } from "@remixicon/react";
 
-export const IconLinkedin = () => {
-    return (
-        <>
-            <a href="https://www.linkedin.com/in/dyandeveloper/" 
-                title="Linkedin" 
-                className="link-social flex items-center text-sm gap-2">
-                <RiLinkedinBoxFill size={26} className="icon-social fill-primary-200 transition-025 opacity-60 hover:opacity-90" />
-            </a>
-        </>
+const createIcon = (IconComponent, hrefURL, iconTitle) => {
+    return () => (
+        <a href={hrefURL} title={iconTitle} className="link-social flex items-center text-sm gap-2">
+            <IconComponent size={26} className="icon-social fill-primary-200 transition-025 opacity-60 hover:opacity-90" />
+        </a>
     );
 };
 
-export const IconGithub = () => {
-    return (
-        <>
-            <a href="https://github.com/DyanDeveloper" 
-                title="Github" 
-                className="link-social flex items-center text-sm gap-2">
-                <RiGithubFill size={24} className="icon-social fill-primary-200 transition-025 opacity-60 hover:opacity-90" />
-            </a>
-        </>
-    );
-};
-
-export const IconInstagram = () => {
-    return (
-        <>
-            <a href="https://www.instagram.com/roldandev.ar/" 
-                title="Instagram" 
-                className="link-social flex items-center text-sm gap-2">
-                <RiInstagramLine size={24} className="icon-social fill-primary-200 transition-025 opacity-60 hover:opacity-90" />
-            </a>
-        </>
-    );
-};
-
-export const IconTwitter = () => {
-    return (
-        <>
-            <a href="https://twitter.com/__dyyan__" 
-                title="Twitter" 
-                className="link-social flex items-center text-sm gap-2">
-                <RiTwitterFill size={24} className="icon-social fill-primary-200 transition-025 opacity-60 hover:opacity-90" />
-            </a>
-        </>
-    );
-};
+export const IconInstagram = createIcon(RiInstagramLine, "https://www.instagram.com/roldandev.ar/", "Instagram");
+export const IconLinkedin  = createIcon(RiLinkedinBoxFill, "https://www.linkedin.com/in/dyandeveloper/", "Linkedin");
+export const IconTwitter   = createIcon(RiTwitterFill, "https://twitter.com/__dyyan__", "Twitter");
+export const IconGithub    = createIcon(RiGithubFill, "https://github.com/DyanDeveloper", "Github");

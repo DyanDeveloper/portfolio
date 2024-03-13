@@ -19,3 +19,8 @@
     background-color: rgba(7, 31, 39, 0.75);
     box-shadow: 0px 0px 12px rgb(7 31 39 / 75%);
 }
+.header.active .navegation-ul{
+    background-color: transparent;
+    opacity: 1;
+    gap: 1rem;
+}

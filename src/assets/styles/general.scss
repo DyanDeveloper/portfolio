@@ -62,8 +62,10 @@ a, abbr{
     font-size: 1rem;
     font-weight: 300;
 }
-nav, ul{
+nav{
     width: 100%;
+}
+nav, ul{
     max-width: var(--max-width);
     margin: auto;
     display: flex;
@@ -92,4 +94,7 @@ span{
 .download-button:hover{
     background-color: var(--primary-800);
     outline-color: var(--primary-800);
+}
+.next-section-button span{
+    transition: var(--transition-1);
 }
