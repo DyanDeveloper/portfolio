@@ -1,7 +1,5 @@
-// React Import
 import React from "react";
 import ReactDOM from "react-dom/client";
-// Local Import
 import App from "@/App.jsx";
 
 
