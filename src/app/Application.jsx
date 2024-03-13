@@ -1,7 +1,7 @@
 import React from "react";
 // Local Import
-import { Home, Projects, Feedback, Contact, Experience } from "@/pages";
-import { Navbar, Header, Footer } from "@/components";
+import { Home, Experience } from "@/pages";
+import { Header } from "@/components";
 import "@/assets/styles/general.scss";
 
 function Application() {

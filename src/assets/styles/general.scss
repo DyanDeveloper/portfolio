@@ -30,6 +30,9 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background: rgb(7, 31, 39);
 }
@@ -72,7 +75,9 @@ nav, ul{
 li{
     list-style: none;
 }
-
+span{
+    transition: var(--transition-1);
+}
 // General Class
 .transition-025{
     transition: all 0.25s ease-in-out;

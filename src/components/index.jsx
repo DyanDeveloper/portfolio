@@ -8,4 +8,4 @@ export { TitleH1, SubtitleH2, SubtitleH3, SubtitleH4, ParagraphP } from "./Title
 // Icons
 export { IconLinkedin, IconGithub, IconInstagram, IconTwitter } from "./Icons/Icons";
 // Documents
-export { ButtonCurriculum } from "./Buttons/Buttons";
+export { ButtonCurriculum, SectionNext } from "./Buttons/Buttons";

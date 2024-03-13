@@ -1,12 +1,12 @@
 import "./Home.scss";
 import React from "react";
-import { TitleH1, SubtitleH2, SubtitleH4, ParagraphP, IconGithub, IconLinkedin, IconTwitter, IconInstagram, ButtonCurriculum } from "@/components";
+import { TitleH1, SubtitleH2, SubtitleH4, ParagraphP, IconGithub, IconLinkedin, IconTwitter, IconInstagram, ButtonCurriculum, SectionNext } from "@/components";
 
 const Home = () => {
   return (
     <>
       <section id="welcomeSection" className="section-home">
-        <div className="w-full max-w-5xl flex flex-col items-center justify-center text-center gap-2 min-h-dvh">
+        <div className="w-full max-w-5xl flex flex-col items-center justify-center text-center gap-2 min-h-dvh relative">
           <SubtitleH4 title="Portafolio" />
           <TitleH1 title="Dylan Roldán" />
           <SubtitleH2 title="Ssr Full Stack Engineer - UI/UX Designer" />
@@ -15,14 +15,13 @@ const Home = () => {
             <div className="flex items-center gap-4">
               <IconGithub />
               <IconLinkedin />
+              <IconTwitter />
+              <IconInstagram />
             </div>
             <div className="flex items-center gap-2">
               <ButtonCurriculum />
             </div>
-            <div className="flex items-center gap-4">
-              <IconTwitter />
-              <IconInstagram />
-            </div>
+            <SectionNext />
           </div>
         </div>
       </section>

@@ -24,17 +24,17 @@
     padding: 0.35rem 0.5rem;
     transition: var(--transition-1);
 }
-.navegation-li.contact-cta{
-    outline: 1px solid transparent;
-    background-color: var(--primary-900);
-    position: absolute;
-    right: 0;
-    -webkit-box-reflect: below 6px linear-gradient(transparent, rgba(0, 0, 0, 0.25));
-}
-.navegation-li.contact-cta:hover{
-    background-color: var(--primary-800);
-    outline-color: var(--primary-800);
-}
-.navegation-li.contact-cta:hover .navegation-path{
-    opacity: 1;
-}
+// .navegation-li.contact-cta{
+//     outline: 1px solid transparent;
+//     background-color: var(--primary-900);
+//     position: absolute;
+//     right: 0;
+//     -webkit-box-reflect: below 6px linear-gradient(transparent, rgba(0, 0, 0, 0.25));
+// }
+// .navegation-li.contact-cta:hover{
+//     background-color: var(--primary-800);
+//     outline-color: var(--primary-800);
+// }
+// .navegation-li.contact-cta:hover .navegation-path{
+//     opacity: 1;
+// }
