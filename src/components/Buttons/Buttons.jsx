@@ -30,7 +30,7 @@ export const SectionNext = () => {
       smooth={true}
       offset={-70}
       duration={500}
-      className="next-section-button flex flex-col items-center text-primary-200 opacity-60 text-sm absolute bottom-1 cursor-pointer group">
+      className="next-section-button w-full flex flex-col items-center text-primary-200 opacity-60 text-sm absolute bottom-1 cursor-pointer group">
       <span className="opacity-0 group-hover:opacity-100 transition-opacity text-sm uppercase">
         {buttonText.NextSection}
       </span>

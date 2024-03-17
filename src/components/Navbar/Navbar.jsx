@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import "./Navbar.scss";
 
 const Navbar = () => {
@@ -6,27 +7,32 @@ const Navbar = () => {
     {
       ID: "1",
       path: "/",
-      name: "Perfil"
+      name: "Perfil",
+      section: "homeSection"
     },
     {
       ID: "2",
       path: "/experiencia",
-      name: "Experiencia"
+      name: "Experiencia",
+      section: "experienceSection"
     },
     {
       ID: "3",
       path: "/proyectos",
-      name: "Proyectos"
+      name: "Proyectos",
+      section: "projectsSection"
     },
     {
       ID: "4",
       path: "/clientes",
-      name: "Clientes"
+      name: "Clientes",
+      section: "clientsSection"
     },
     {
       ID: "5",
       path: "/contacto",
-      name: "Contáctame"
+      name: "Contáctame",
+      section: "contactSection"
     }
   ];
 
@@ -34,9 +40,18 @@ const Navbar = () => {
     <>
       <nav id="navegation" className="navegation">
         <ul className="navegation-ul">
-          {routes.map((route, index) => (
-            <li key={route.ID} className={`navegation-li ${index === routes.length - 1 ? 'contact-cta' : ''}`}>
-              <a href={route.path} className="navegation-path hover:opacity-50">{route.name}</a>
+          {routes.map((route) => (
+            <li key={route.ID} className="navegation-li">
+              <Link 
+                href={route.path} 
+                to={route.section} 
+                spy={true} 
+                smooth={true} 
+                offset={-70} 
+                duration={500} 
+                className="navegation-path hover:opacity-50">
+                {route.name}
+              </Link>
             </li>
           ))}
         </ul>

@@ -34,7 +34,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background: rgb(7, 31, 39);
+    background: linear-gradient(0deg, rgba(27,78,94,1) 0%, rgba(7,31,39,1) 100%);
 }
 section{
     width: 100%;
@@ -100,4 +100,13 @@ span{
 }
 .card-experience{
     background-color: rgb(10, 63, 81, 0.25);
+}
+
+.experience-title{
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    outline: 2px solid var(--primary-200);
+    opacity: 0.60;
 }
