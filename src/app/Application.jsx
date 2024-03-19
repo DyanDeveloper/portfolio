@@ -9,9 +9,6 @@ function Application() {
       <Header />
       <Home />
       <Experience />
-      <Projects />
-      <Clients />
-      <Contact />
     </>
   )
 }

@@ -5,7 +5,7 @@ import curriculumPDF from "@/assets/documents/curriculum.pdf";
 
 const buttonText = {
   DownloadCV: "Descargar CV",
-  NextSection: "Experiencias"
+  NextSection: "Experiencia"
 };
 
 export const ButtonCurriculum = () => {

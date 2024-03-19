@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
+import { Logo } from "@/components";
 import "./Navbar.scss";
 
 const Navbar = () => {
@@ -7,8 +8,8 @@ const Navbar = () => {
     {
       ID: "1",
       path: "/",
-      name: "Perfil",
-      section: "homeSection"
+      name: "Presentación",
+      section: "profileSection"
     },
     {
       ID: "2",

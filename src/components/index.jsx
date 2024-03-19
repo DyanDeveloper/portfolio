@@ -9,3 +9,5 @@ export { TitleH1, SubtitleH2, SubtitleH3, SubtitleH4, ParagraphP } from "./Title
 export { IconLinkedin, IconGithub, IconInstagram, IconTwitter } from "./Icons/Icons";
 // Actions
 export { ButtonCurriculum, SectionNext } from "./Buttons/Buttons";
+// Layout
+export { default as Logo } from "./Layout/Layout";

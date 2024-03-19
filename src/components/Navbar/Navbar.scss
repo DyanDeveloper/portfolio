@@ -6,6 +6,7 @@
 .navegation-ul{
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 2rem;
     transition: var(--transition-1);
     position: relative;

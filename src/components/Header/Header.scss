@@ -2,17 +2,24 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
     width: 100%;
     height: 74px;
     transition: var(--transition-1);
-    
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
 }
+.header .navegation-ul{
+    background-color: rgba(200, 200, 200, 0.10);
+}
+.header:hover .navegation-ul{
+    background-color: rgba(200, 200, 200, 0.15);
+}
 .header.active{
     backdrop-filter: blur(15px);
+}
+.header.active .navegation-ul{
+    background-color: transparent;
 }
